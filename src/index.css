@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+
+:root {
+  --blueColor: #0028aa;
+  --grayColor: #bcbdaa;
+  --darkgrayColor: #525252;
+  --cyanColor: #59ffff;
+  --yellowColor: #fffa51;
+  --emeraldColor: #184343;
+  --lightEmeraldColor: #38a6a6;
+  --redColor: #9c0b07;
+  --badTextColor: #fe6666;
+  --highlightTextColor: #ffffff;
+  --fontName: "IBM Plex Mono", monospaced;
+
+  font-family: var(--fontName);
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: var(--blueColor);
+}
+
+#root {
+  width: 800px;
+  margin: 3em auto;
+  color: var(--grayColor);
 }
