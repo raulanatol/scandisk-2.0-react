@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
-import { Colors } from '../../Theme';
+import { Colors } from '../../../Theme';
 
 const IdBlock = styled.span<any>`
   text-align: center;

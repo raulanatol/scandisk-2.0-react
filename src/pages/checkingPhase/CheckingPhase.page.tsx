@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
-import { Colors } from '../Theme';
-import { Stage, StageProp } from './stage/Stage';
+import { Colors } from '../../Theme';
+import { Stage, StageProp } from './components/Stage';
+import { Button } from "../../components/Button";
 
 const Screen = styled.div``;
 const List = styled.div`
@@ -23,7 +24,7 @@ const STAGES: StageProp[] = [
   { name: 'Surface scan', status: 'pending' }
 ];
 
-export const ScandiskCheck: FC = () => {
+export const CheckingPhase: FC = () => {
   return <Screen>
     <p className="title">Microsoft ScanDisk</p>
     <Separator/>
@@ -32,9 +33,9 @@ export const ScandiskCheck: FC = () => {
       {STAGES.map(stage => <Stage key={stage.name} {...stage}/>)}
     </List>
     <div className="buttons">
-      {/*<scandisk-button>Pause</scandisk-button>*/}
-      {/*<scandisk-button href="https://twitter.com/Manz/status/1124749875315380224">More info</scandisk-button>*/}
-      {/*<scandisk-button>Exit</scandisk-button>*/}
+      <Button>Pause</Button>
+      <Button href="https://twitter.com/Manz/status/1124749875315380224">More info</Button>
+      <Button>Exit</Button>
     </div>
     <Separator/>
     {/*${this.scandiskBar}*/}

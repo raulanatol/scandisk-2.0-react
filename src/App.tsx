@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { ScandiskCheck } from './components/ScandiskCheck';
+import { CheckingPhase } from "./pages/checkingPhase/CheckingPhase.page";
 
 type AppPhase = 'CHECKING' | 'SURFACE' | 'SUMMARY';
 
@@ -7,10 +7,10 @@ const App: FC = () => {
   const [phase, setPhase] = useState<AppPhase>('CHECKING');
 
   if (phase === 'CHECKING') {
-    return <ScandiskCheck/>;
+    return <CheckingPhase/>;
   }
 
   return null;
-}
+};
 
 export default App;
